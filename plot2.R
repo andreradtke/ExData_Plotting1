@@ -17,6 +17,6 @@ rm(dataset, dateTime)
 
 # Write line plot to png file
 png('plot2.png', width = 840, height = 840)
-with(dataSubset, plot(dateTime, globalActivePower, type = 'n', xlab = '', ylab = 'Global Active Power (kWh)', cex.lab = 1.3, cex.axis = 1.1))
+with(dataSubset, plot(dateTime, globalActivePower, type = 'n', xlab = '', ylab = 'Global Active Power (kW)', cex.lab = 1.3, cex.axis = 1.1))
 with(dataSubset, lines(dateTime, globalActivePower, ljoin = 2))
 dev.off()
