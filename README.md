@@ -1,3 +1,27 @@
+# Description
+
+This repository contains the project files for the Programming Assignment of the Coursera Data Science Specialization course.
+
+The course assignment is provided further below.
+
+# Steps to run analysis
+
+The following steps should be completed to run the analysis:
+1. Set the working directory to the desired path for the files to be stored.
+2. Download the dataset and place the unziped *household_power_consumption.txt* file in the working directory.
+    * <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">Electric power consumption</a>
+3. Download the scripts (*plot1.R*, *plot2.R*, etc.) to the working directory.
+4. Run each script individually to recreate each *png* file provided in this repository.
+
+## Required Packages
+
+The following packages are used by all the scripts:
+* dplyr
+
+# Course Assignment
+
+The description below is provided in the original repository from which this one was forked.
+
 ## Introduction
 
 This assignment uses data from
