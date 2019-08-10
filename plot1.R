@@ -10,6 +10,6 @@ dataSubset <- as.numeric(unlist(dataSubset))
 rm(dataset)
 
 # Write histogram to png file
-png('plot1.png', width = 840, height = 840)
+png('plot1.png', width = 480, height = 480)
 hist(dataSubset, col = 'red', main = 'Global Active Power', xlab = 'Global Active Power (kW)', ylab = 'Frequency', cex.lab = 1.3, cex.axis = 1.1, cex.main = 1.5)
 dev.off()

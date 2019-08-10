@@ -20,27 +20,27 @@ dataSubset$Sub_metering_3 <- as.numeric(dataSubset$Sub_metering_3)
 rm(dataset, dateTime)
 
 # Write line plot to png file
-png('plot4.png', width = 840, height = 840)
+png('plot4.png', width = 480, height = 480)
 
 par(mfrow = c(2 ,2))
 
 # Top lef plot
-with(dataSubset, plot(dateTime, Global_active_power, type = 'n', xlab = '', ylab = 'Global Active Power (kW)', cex.lab = 1.3, cex.axis = 1.1))
+with(dataSubset, plot(dateTime, Global_active_power, type = 'n', xlab = '', ylab = 'Global Active Power (kW)'))
 with(dataSubset, lines(dateTime, Global_active_power, ljoin = 2))
 
 # Top right plot
-with(dataSubset, plot(dateTime, Voltage, type = 'n', xlab = 'dateTime', ylab = 'Voltage (V)', cex.lab = 1.3, cex.axis = 1.1))
+with(dataSubset, plot(dateTime, Voltage, type = 'n', xlab = 'dateTime', ylab = 'Voltage (V)'))
 with(dataSubset, lines(dateTime, Voltage, ljoin = 2))
 
 # Bottom left plot
-with(dataSubset, plot(dateTime, Sub_metering_1, type = 'n', xlab = '', ylab = 'Energy Sub Metering (Wh)', cex.lab = 1.3, cex.axis = 1.1))
+with(dataSubset, plot(dateTime, Sub_metering_1, type = 'n', xlab = '', ylab = 'Energy Sub Metering (Wh)'))
 with(dataSubset, lines(dateTime, Sub_metering_1, col = 'black', ljoin = 2))
 with(dataSubset, lines(dateTime, Sub_metering_2, col = 'red', ljoin = 2))
 with(dataSubset, lines(dateTime, Sub_metering_3, col = 'blue', ljoin = 2))
-legend('topright', col = c('black', 'red', 'blue'), legend = c('Sub Metering 1', 'Sub Metering 2', 'Sub Metering 3'), lwd = 2, cex = 1.3, bty = 'n')
+legend('topright', col = c('black', 'red', 'blue'), legend = c('Sub Metering 1', 'Sub Metering 2', 'Sub Metering 3'), lwd = 2, bty = 'n')
 
 # Bottom right plot
-with(dataSubset, plot(dateTime, Global_reactive_power, type = 'n', xlab = 'dateTime', ylab = 'Global Reactive Power (kW)', cex.lab = 1.3, cex.axis = 1.1))
+with(dataSubset, plot(dateTime, Global_reactive_power, type = 'n', xlab = 'dateTime', ylab = 'Global Reactive Power (kW)'))
 with(dataSubset, lines(dateTime, Global_reactive_power, ljoin = 2))
 
 dev.off()

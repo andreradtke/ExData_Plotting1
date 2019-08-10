@@ -17,7 +17,7 @@ dataSubset$Sub_metering_3 <- as.numeric(dataSubset$Sub_metering_3)
 rm(dataset, dateTime)
 
 # Write line plot to png file
-png('plot3.png', width = 840, height = 840)
+png('plot3.png', width = 480, height = 480)
 with(dataSubset, plot(dateTime, Sub_metering_1, type = 'n', xlab = '', ylab = 'Energy Sub Metering (Wh)', cex.lab = 1.3, cex.axis = 1.1))
 with(dataSubset, lines(dateTime, Sub_metering_1, col = 'black', ljoin = 2))
 with(dataSubset, lines(dateTime, Sub_metering_2, col = 'red', ljoin = 2))
